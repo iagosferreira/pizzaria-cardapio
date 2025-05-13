@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/output.css">
     <title>Dev Burguer</title>
 </head>
@@ -13,7 +19,170 @@
             <h1 class="text-4xl mt-4 mb-2 font-bold text-white">Dev Burguer</h1>
 
             <span class="text-white font-medium">Rua Dev 2007, Volta Redonda - RJ</span>
+            <div class="bg-green-600 px-4 py-1 rounded-lg mt-5 text-white font-medium" id="date-span">
+                <span>Seg á Dom - 18:00 as 23:00</span>
+            </div>
         </div>
     </header>
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+        Conheça nosso menu
+    </h2>
+    <!-- inicio menu  -->
+     <div id="menu" class="">
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+<!-- Produto item -->
+        <div class="flex gap-2">
+            <img src="assets/hamb-1.png" alt="hamb-1" class="2-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-400 ">
+            <div>
+                <p class="font-bold">Hamburguer Smash</p>
+                <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim exercitationem odio saepe culpa impedit provident</p>
+                
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">R$24.90</p>
+                    <button class="bg-gray-900 px-5 rounded add-too-card-btn"
+                    data-name="Hamburguer Smash"
+                    data-price="24.90">
+                    <!-- data-name= nome do produto / data-price = preço do produto -->
+                        <i class="fa-solid fa-cart-shopping text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+<!-- end Produto item -->
+<!-- Produto item 2-->
+        <div class="flex gap-2">
+            <img src="assets/hamb-2.png" alt="hamb-2" class="2-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-400 ">
+            <div>
+                <p class="font-bold">Duble Burguer</p>
+                <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim exercitationem odio saepe culpa impedit provident</p>
+                
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">R$26.90</p>
+                    <button class="bg-gray-900 px-5 rounded add-too-card-btn"
+                    data-name="Duble Burguer"
+                    data-price="26.90">
+                    <!-- data-name= nome do produto / data-price = preço do produto -->
+                        <i class="fa-solid fa-cart-shopping text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+<!-- end Produto item 2-->
+<!-- Produto item 3-->
+        <div class="flex gap-2">
+            <img src="assets/hamb-3.png" alt="hamb-3" class="2-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-400 ">
+            <div>
+                <p class="font-bold">Cheddar Burguer</p>
+                <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim exercitationem odio saepe culpa impedit provident</p>
+                
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">R$22.90</p>
+                    <button class="bg-gray-900 px-5 rounded add-too-card-btn"
+                    data-name="Cheddar Burguer"
+                    data-price="22.90">
+                    <!-- data-name= nome do produto / data-price = preço do produto -->
+                        <i class="fa-solid fa-cart-shopping text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+<!-- end Produto item 3-->
+<!-- Produto item 4-->
+    <div class="flex gap-2">
+        <img src="assets/hamb-4.png" alt="hamb-4" class="2-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-400 ">
+        <div>
+            <p class="font-bold">Moda da Casa</p>
+            <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim exercitationem odio saepe culpa impedit provident</p>
+            
+            <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-lg">R$22.90</p>
+                <button class="bg-gray-900 px-5 rounded add-too-card-btn"
+                data-name="Moda da Casa"
+                data-price="22.90">
+                <!-- data-name= nome do produto / data-price = preço do produto -->
+                    <i class="fa-solid fa-cart-shopping text-lg text-white"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+<!-- end Produto item 4-->
+        </main>
+
+        <div class="mx-auto max-w-7xl px-2 my-2">
+            <h2 class="font-bold text-3xl">
+            Bebibas</h2>
+        </div>
+        <!-- grid bebibas -->
+         <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+    <!-- Bebida 1 item -->
+            <div class="flex gap-2 w-full">
+                <img src="assets/refri-1.png" alt="coca lata" class="2-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-400 ">
+                <div class="w-full">
+                    <p class="font-bold">Coca lata</p>
+                    
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$6.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-too-card-btn"
+                        data-name="Coca lata"
+                        data-price="6.00">
+                        <!-- data-name= nome do produto / data-price = preço do produto -->
+                            <i class="fa-solid fa-cart-shopping text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    <!-- end bebida 1 item -->
+    <!-- Bebida 2 item -->
+            <div class="flex gap-2 w-full">
+                <img src="assets/refri-2.png" alt="Guarana lata" class="2-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-400 ">
+                <div class="w-full">
+                    <p class="font-bold">Guarana lata</p>
+                    
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$6.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-too-card-btn"
+                        data-name="Guarana lata"
+                        data-price="6.00">
+                        <!-- data-name= nome do produto / data-price = preço do produto -->
+                            <i class="fa-solid fa-cart-shopping text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    <!-- end bebida 2 item -->
+         </div>
+        <!-- end grid bebibas -->
+     </div>
+     <!-- end menu  -->
+ 
+     <!-- modal card  -->
+      <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99]  items-center justify-center hidden" >
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+            <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
+
+            <div id="cart-items" class="justify-between mb-2 flex-col"></div>
+            <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+            <p class="font-bold mt-4"></p> endereço de entrega: </p>
+            <input type="text" placeholder="Digite seu endereço completo" id="eddress" class="w-full border-2 p-1 rounded my-1">
+            <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo!</p>
+            <div class="flex items-center justify-between">
+                <button id="close-modal-btn">Fechar</button>
+                <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar pedido</button>
+            </div>
+        </div>
+
+      </div>
+     <!-- end modal card  -->
+
+    <!-- BUTTON CARD FOOTER  -->
+     <footer class="w-full bg-red-500 py-2 fixed bottom-0 z-40 flex items-center justify-center">
+        <button class="felx items-center gap-2 text-white font-bold"
+        id="cart-btn">
+            ( <span id="card-count"> 0</span> )
+            Meu carrinho
+            <i class="fa-solid fa-cart-shopping text-lg text-white"></i>
+        </button>
+     </footer>
+    <!-- END BUTTON CARD FOOTER  -->
 </body>
 </html>
